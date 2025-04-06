@@ -7,8 +7,6 @@ MAINTAINER RikoDEV <kontakt@riko.dev>
 ENV DEBIAN_FRONTEND=noninteractive
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
-#
-
 RUN apt-get update -y \
   && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata locales iproute2 \
   && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
