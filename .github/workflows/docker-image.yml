@@ -2,7 +2,7 @@ name: Build & Push GraalVM EE Images
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "mains" ]
   pull_request:
     branches: [ "main" ]
 
