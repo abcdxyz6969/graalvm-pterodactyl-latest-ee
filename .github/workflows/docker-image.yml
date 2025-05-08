@@ -14,8 +14,10 @@ jobs:
       matrix:
         tag:
           - EE-11
-          - EE-17
+          - EE-17-JDK
+          - EE-20-JDK
           - EE-21-JDK
+          - EE-23-JDK
           - EE-24-JDK
 
     name: Build ${{ matrix.tag }}
