@@ -19,7 +19,7 @@ RUN apt-get update -y \
          "linux/amd64")  ARCH=linux-amd64  ;; \
          "linux/arm64")  ARCH=linux-aarch64  ;; \
     esac \
-  && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://containerregistry.4h4b.love/files/graalvm-jdk-21_linux-x64_bin.tar.gz \
+  && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://download850.mediafire.com/y5pesgbd5engvTVU9dA4XcqQAv6I4ooSeunyIeXD9sJ9kA00_17mGE5R28NEzXE5IjLpooUFHABfMbYE2KpbFJ6Sd5fjHRQy3VpgFN5exvN3xQMJ8R-U1As-nMMNhDEn_dkj9Ke44692rpt7YefGahFK_EBjJJ_mP8DHeasgWjG5/6atnvrn7du7me30/graalvm-jdk-21_linux-x64_bin.tar.gz \
   && mkdir -p /opt/java/graalvm \
   && cd /opt/java/graalvm \
   && tar -xf /tmp/graalvm.tar.gz --strip-components=1 \
