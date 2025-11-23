@@ -18,6 +18,7 @@ jobs:
           - EE-22-JDK
           - EE-23-JDK
           - EE-24-JDK
+          - EE-25-JDK
 
     name: Build ${{ matrix.tag }}
 
