@@ -11,7 +11,7 @@ RUN apt-get update -y \
   && apt-get install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata locales iproute2 \
   && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen \
   && locale-gen en_US.UTF-8 \
-  && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://cdn.knuamc.icu/file/graalvm-jdk-25_linux-x64_bin.tar.gz \
+  && curl --retry 3 -Lfso /tmp/graalvm.tar.gz https://download1523.mediafire.com/g15hpfdma9jgWa-FEB6y2he3gr9zJ6bZpQgx6dkp8QE70KPP6RXxaGBLuVaMb8H4XXSUHBVED9LahA_xsh-RnlWr0fBZgUM8u6YyPKG7ZVhCgy5VQSuu9XPhJU_A6NDWWmBXyqS1smG4bfCSPFU9YI0eUnhrchhlbZlcd8HWD-jlpg/lpvojd47kdh5icp/graalvm-jdk-25_linux-x64_bin.tar.gz \
   && mkdir -p /opt/java/graalvm \
   && tar -xf /tmp/graalvm.tar.gz -C /opt/java/graalvm --strip-components=1 \
   && rm -rf /var/lib/apt/lists/* /tmp/graalvm.tar.gz
